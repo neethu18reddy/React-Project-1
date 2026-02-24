@@ -19,7 +19,7 @@ function App() {
     // Convert todos → transport routes
     const mappedRoutes = data.slice(0, 10).map((item, index) => ({
       routeNo: `Route ${index + 1}`,
-      time: new Date(Date.now() + (index + 1) * 5 * 60000)
+      time: new Date(Date.now() + (index + 1) * 5 * 60000),
     }));
 
     setRoutes(mappedRoutes);
@@ -37,12 +37,30 @@ function App() {
 
   // Filter routes
   const filteredRoutes = selectedRoute
-    ? routes.filter(r => r.routeNo === selectedRoute)
+    ? routes.filter((r) => r.routeNo === selectedRoute)
     : routes;
+
+  // Find next arriving bus
+  const nextBus =
+    routes.length > 0
+      ? routes.reduce((min, curr) => (curr.time < min.time ? curr : min))
+      : null;
 
   return (
     <div className="app">
       <Header lastUpdated={lastUpdated} onRefresh={fetchRoutes} />
+      {nextBus && (
+        <div className="next-bus-card">
+          <h2>🚍 Next Bus</h2>
+          <p>
+            <strong>{nextBus.routeNo}</strong>
+          </p>
+          <p>
+            Arrives at {nextBus.time.toLocaleTimeString()} (
+            {Math.max(Math.floor((nextBus.time - new Date()) / 60000), 0)} min)
+          </p>
+        </div>
+      )}
 
       <RouteSelector
         routes={routes}
@@ -64,10 +82,7 @@ function App() {
       ) : filteredRoutes.length === 0 ? (
         <p>No routes available</p>
       ) : (
-        <TransportList
-          routes={filteredRoutes}
-          showOnlyNext={showOnlyNext}
-        />
+        <TransportList routes={filteredRoutes} showOnlyNext={showOnlyNext} />
       )}
     </div>
   );

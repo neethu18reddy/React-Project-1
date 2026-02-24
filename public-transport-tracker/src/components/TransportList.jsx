@@ -12,7 +12,7 @@ function TransportList({ routes, showOnlyNext }) {
           key={index}
           className={route === nextArrival ? "highlight" : ""}
         >
-          {route.routeNo} – Arrives at {route.time.toLocaleTimeString()}
+          {route.routeNo}  Arrives at {route.time.toLocaleTimeString()}
         </li>
       ))}
     </ul>
