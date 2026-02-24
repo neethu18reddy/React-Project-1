@@ -307,78 +307,9 @@ We welcome contributions! Here's how you can help:
 - [ ] 📊 **Route History**
 - [ ] 💾 **Favorite Routes**
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
-</div>
 
-## 👤 **Author**
 
-<div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <img src="https://avatars.githubusercontent.com/u/1?v=4" width="150px" alt="Author"/>
-        <br/>
-        <h3>Your Name</h3>
-        <sub>🚀 Full Stack Developer</sub>
-        <br/>
-        <sub>💻 React Enthusiast | 🎨 UI/UX Designer | 📚 Tech Writer</sub>
-      </td>
-    </tr>
-  </table>
-</div>
 
-### Connect with Me
-<div align="center">
-  
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourusername)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourusername)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/yourusername)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://yourportfolio.com)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
-
-</div>
-
-### Acknowledgments 🙏
-- Icons by [Font Awesome](https://fontawesome.com)
-- Mock API by [JSONPlaceholder](https://jsonplaceholder.typicode.com)
-- Inspired by modern public transport systems
-- Thanks to all open-source contributors
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%">
-</div>
-
-## 📄 **License**
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License
-
-Copyright (c) 2024 Your Name
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
-<div align="center">
-  
 ### *"Your journey, simplified. Your time, optimized."* ✨
 
 **Made with ❤️ for better public transport experience**
@@ -421,3 +352,4 @@ SOFTWARE.
   <br/>
   <sub>Made with ⚛️ React and ❤️</sub>
 </div>
+
