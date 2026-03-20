@@ -1,9 +1,11 @@
 function Header({ lastUpdated, onRefresh }) {
   return (
     <div className="header">
-      <h1>🚌 Public Transport Tracker</h1>
-      <p>Last updated: {lastUpdated || "Fetching..."}</p>
-      <button onClick={onRefresh}>Refresh</button>
+      <h1>🚍 Smart Transport</h1>
+      <div className="header-row">
+        <span>Updated: {lastUpdated || "..."}</span>
+        <button onClick={onRefresh}>🔄</button>
+      </div>
     </div>
   );
 }
