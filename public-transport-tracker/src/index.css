@@ -1,139 +1,102 @@
-/* RESET + BASE */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: "Segoe UI", system-ui, sans-serif;
-  background: linear-gradient(135deg, #e3f2fd, #fce4ec);
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
 }
 
-/* APP CARD */
 .app {
-  background: #ffffff;
-  width: 100%;
-  max-width: 520px;
-  border-radius: 16px;
-  padding: 24px 28px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
 }
 
-/* HEADER */
 .header {
   text-align: center;
-  margin-bottom: 20px;
 }
 
-.header h1 {
-  font-size: 1.6rem;
-  color: #1e293b;
-}
-
-.header p {
-  font-size: 0.9rem;
-  color: #64748b;
-  margin-top: 4px;
-}
-
-/* REFRESH BUTTON */
-button {
-  margin-top: 12px;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 8px;
-  background: linear-gradient(135deg, #2563eb, #4f46e5);
-  color: white;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(79, 70, 229, 0.4);
-}
-
-/* DROPDOWN */
-select {
-  width: 100%;
-  margin: 14px 0;
-  padding: 10px 12px;
-  border-radius: 8px;
-  border: 1px solid #cbd5f5;
-  font-size: 0.95rem;
-  outline: none;
-}
-
-select:focus {
-  border-color: #4f46e5;
-}
-
-/* TOGGLE */
-.toggle {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 14px;
-  font-size: 0.9rem;
-  color: #334155;
-}
-
-.toggle input {
-  accent-color: #4f46e5;
-}
-
-/* LIST */
-ul {
-  list-style: none;
-  margin-top: 10px;
-}
-
-li {
-  padding: 12px 14px;
-  margin-bottom: 10px;
-  background: #f8fafc;
-  border-radius: 10px;
+.header-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.95rem;
-  color: #1e293b;
-  border-left: 4px solid transparent;
-  transition: transform 0.15s ease;
 }
 
-li:hover {
-  transform: scale(1.02);
+button {
+  padding: 6px 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-/* NEXT ARRIVAL HIGHLIGHT */
-.highlight {
-  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
-  border-left: 4px solid #16a34a;
-  font-weight: 600;
-}
-
-/* STATES */
-p {
+.next-bus {
+  background: #e6f7ff;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px 0;
   text-align: center;
-  color: #475569;
-  font-size: 0.95rem;
-  margin-top: 20px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 480px) {
-  .app {
-    padding: 20px;
-  }
+.dropdown {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+}
 
-  .header h1 {
-    font-size: 1.4rem;
-  }
+.toggle {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Transport Cards */
+.transport-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.transport-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+.left h2 {
+  margin: 0;
+}
+
+.left p {
+  margin: 4px 0 0;
+  color: gray;
+}
+
+.right {
+  text-align: center;
+}
+
+.right h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+/* Status colors */
+.arriving {
+  border-left: 6px solid rgb(0, 255, 26);
+}
+
+.soon {
+  border-left: 6px solid rgb(251, 255, 0);
+}
+
+.later {
+  border-left: 6px solid rgb(255, 2, 2);
+}
+
+.next {
+  background: #e6f7ff;
+  border-left: 6px solid #007bff;
 }
