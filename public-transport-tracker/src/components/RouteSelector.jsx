@@ -3,10 +3,11 @@ function RouteSelector({ routes, selectedRoute, setSelectedRoute }) {
     <select
       value={selectedRoute}
       onChange={(e) => setSelectedRoute(e.target.value)}
+      className="dropdown"
     >
       <option value="">All Routes</option>
-      {routes.map((route, index) => (
-        <option key={index} value={route.routeNo}>
+      {routes.map((route) => (
+        <option key={route.routeNo} value={route.routeNo}>
           {route.routeNo}
         </option>
       ))}
